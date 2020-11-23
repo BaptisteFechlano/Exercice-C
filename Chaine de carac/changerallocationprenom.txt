@@ -1,0 +1,33 @@
+#include <stdio.h> 
+
+/* CHAINE DE CARACTERE = TABLEAU 
+-------------------------
+    signed char mot[] = {'B', 'i', 'j', 'o', 'u', 'r'}
+----------------
+    mémoire mot[6] = "Bijour";
+    ['B']
+    ['i']
+    ['j']
+    ['o']
+    ['u']
+    ['r']
+    ['\0']  fin de chaine compte 1
+    -----------------------------
+    espace déclaré ne peux être modifié simplement par la suite
+    déclaration seulement première ligne ---> signed char mot[] = "le mot"
+*/
+
+int main(void)
+{
+    char prenom[25] = "Batou";
+    char stockage[256];
+
+    printf("Ton prenom de base : %s\n", prenom);
+
+    printf("Changer ton prenom ? ");
+    scanf("%s", stockage);
+
+    printf("Ton nouveau prenom est : %s\n", prenom);
+
+    return 0;
+}

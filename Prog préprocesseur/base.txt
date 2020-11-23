@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#define TVA 20 //remplace dans tout le code avec mot clé
+
+int main(void)
+{
+    int prixHT = 15;
+    int prixTTC = 0;
+
+    prixTTC = prixHT + (prixHT * TVA / 100);
+
+    return 0;
+}

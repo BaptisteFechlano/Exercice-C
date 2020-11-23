@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+/*
+    Pointeur : variable contenant l'adresse d'une autre variable
+*/
+
+int   inverser_nombres(nombreA, nombreB)
+{
+    int temporaire = 0; 
+
+    temporaire = nombreB;
+    nombreB = nombreA;
+    nombreA = temporaire;
+    
+    return nombreA;
+}
+
+int main(void)
+{
+    int nombreA = 15;
+    int nombreB = 52;
+
+    printf("Adresse de NombreB = %p\", &nombreB)
+
+    //printf("Avant : A = %d et B = %d\n", nombreA, nombreB);
+    //inverser_nombres(nombreA, nombreB);
+    //printf("Apres : A = %d et B = %d\n", nombreA, nombreB);
+
+
+    return 0;
+}

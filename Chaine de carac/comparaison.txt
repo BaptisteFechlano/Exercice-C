@@ -1,0 +1,41 @@
+#include <stdio.h> 
+#include <string.h>
+
+/* CHAINE DE CARACTERE = TABLEAU 
+
+[Fonction de chaines]
+    strcpy()  : copie une chaine dans une autre
+    strlen()  : longueur d'une chaine (sans caractère de fin de chaine '\0')
+    strcmpt() : comparer deux chaines (lexicographiquement, classé comme dans une dictionnaire)
+
+-------------------------
+    signed char mot[] = {'B', 'i', 'j', 'o', 'u', 'r'}
+----------------
+    mémoire mot[6] = "Bijour";
+    ['B']
+    ['i']
+    ['j']
+    ['o']
+    ['u']
+    ['r']
+    ['\0']  fin de chaine compte 1
+    -----------------------------
+    espace déclaré ne peux être modifié simplement par la suite
+    déclaration seulement première ligne ---> signed char mot[] = "le mot"
+*/
+
+int main(void)
+{
+    char mot1[] = "Batou";
+    char mot2[] = "Loupilopio";
+    int test = strcmp(mot1, mot2);
+
+    if(test == 0)
+        printf("Les deux mots sont de meme taille. \n");
+    else if(test < 0)
+        printf("%s < %s\n", mot1, mot2);
+    else
+        printf("%s > %s\n", mot1, mot2);
+
+    return 0;
+}

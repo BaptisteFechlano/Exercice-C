@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+/*
+
+    Liste NOIRE ! : gets(), atoi(), atol(,) atod()
+    Liste GRISE   : scanf(), fscanf() -> savoir comment cette fonction fonctionne
+    Liste BLANCHE : fgets(),
+
+
+    int scanf(const char *format, ..autre variables..);
+
+    int someFonction(params...)
+    {
+        return 0
+        //si problème digitalRead
+        return -1;
+
+        //...si problème G
+        return -11;
+    }
+
+    ret = someFunction(...)
+
+
+*/
+/*
+
+porte|creerdictionnaire
+chat|dsjdklae
+voiture|fzklfjezfmlkj travailler avec des fichiers binaire
+pareil à "%s|%s"....
+
+manipules des octets 
+
+sizeof() 
+
+*/
+
+#define BUFFER_SIZE 6
+
+int main(void)
+{
+    int x = 0, y = 0;
+    int ret;
+
+    printf("Indiquez x et y : ");
+    ret = scanf("%d / %d", &x, &y);
+
+    printf("X :%d et Y : %d\n", x, y);
+    printf("RET : %d\n", ret);
+
+    return 0;
+}

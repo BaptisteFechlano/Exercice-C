@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+    int nombre = 100; //demande autorisation stockage mémoire vive 4 à 8 octect pour int
+
+
+    return 0;
+}
